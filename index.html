@@ -3,172 +3,164 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <title>Frontend Mentor | Sunnyside agency landing page</title>
-
+    <title>hello_u | Sunnyside landing page</title>
     <link rel="stylesheet" href="style.css" />
-
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <div class="background">
-      <header>
-        <div class="container">
-          <div class="logo">
-            <img src="/images/logo.svg" alt="" />
-          </div>
-
-          <div class="navbar">
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Projects</a></li>
-              <li class="btn"><button type="submit">CONTACT</button></li>
-            </ul>
-          </div>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="/images/logo.svg" alt="logo" />
         </div>
-      </header>
-
-      <main>
+        <div class="navbar">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="btn"><button type="submit">CONTACT</button></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <!-- title line hero section -->
+      <div class="background">
         <div class="heading">
           <h1>WE ARE CREATIVES</h1>
-          <img src="/images/icon-arrow-down.svg" alt="" />
+          <img src="/images/icon-arrow-down.svg" alt="down-arrow" />
+        </div>
+      </div>
+      <!-- image & text Container -->
+      <div class="card-container">
+        <div class="card text-card">
+          <h2>Transform your<br />brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <span>LEARN MORE</span>
+        </div>
+        <div class="card">
+          <img src="/images/desktop/image-transform.jpg" alt="egg" />
         </div>
 
-        <div class="card-container">
-          <div class="card text-card">
-            <h2>Transform your brand</h2>
+        <div class="card">
+          <img src="/images/desktop/image-stand-out.jpg" alt="stand-cup" />
+        </div>
+
+        <div class="card text-card">
+          <h2>Stand out to the right <br />audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
+          </p>
+          <span>LEARN MORE</span>
+        </div>
+        <div class="card bg-card">
+          <img src="/images/desktop/image-photography.jpg" alt="orange" />
+        </div>
+        <div class="card bg-card">
+          <img src="/images/desktop/image-graphic-design.jpg" alt="cherry" />
+        </div>
+      </div>
+      <!-- Testimonial section  -->
+      <div class="testimonial-bg">
+        <div class="about"><h3>CLIENT TESTIMONIALS</h3></div>
+        <div class="testimonials">
+          <div class="person">
+            <img src="/images/image-emily.jpg" alt="Emily" />
             <p>
-              We are a full-service creative agency specializing in helping
-              brands grow fast. Engage your clients through compelling visuals
-              that do most of the marketing for you.
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
             </p>
-            <p>LEARN MORE</p>
+            <span>Emily R.</span>
+            <p>Marketing Director</p>
           </div>
-          <div class="card">
-            <img src="/images/desktop/image-transform.jpg" alt="" />
-          </div>
-
-          <div class="card">
-            <img src="/images/desktop/image-stand-out.jpg" alt="" />
-          </div>
-
-          <div class="card text-card">
-            <h2>Stand out to the right audience</h2>
+          <div class="person">
+            <img src="/images/image-thomas.jpg" alt="Thomas" />
             <p>
-              Using a collaborative formula of designers, researchers,
-              photographers, videographers, and copywriters, we’ll build and
-              extend your brand in digital places.
+              Sunnyside's enthusiasm coupled with their keen interest in our
+              brand's success made it a satisfying and enjoyable.
             </p>
-            <p>LEARN MORE</p>
+            <span>Thomas S. </span>
+            <p>Chief Operating Officer</p>
           </div>
-          <div class="card">
-            <img src="/images/desktop/image-photography.jpg" alt="" />
-          </div>
-          <div class="card">
-            <img src="/images/desktop/image-graphic-design.jpg" alt="" />
-          </div>
-        </div>
-        <div class="testionial-bg">
-          <div class="about"><h3>CLIENT TESTIMONIALS</h3></div>
-          <div class="testimonials">
-            <div class="person">
-              <img src="/images/image-emily.jpg" alt="Emily" />
-              <p>
-                We put our trust in Sunnyside and they delivered, making sure
-                our needs were met and deadlines were always hit.
-              </p>
-              <span>Emily R. </span>
-              <p>Marketing Director</p>
-            </div>
-            <div class="person">
-              <img src="/images/image-thomas.jpg" alt="Thomas" />
-              <p>
-                Sunnyside’s enthusiasm coupled with their keen interest in our
-                brand’s success made it a satisfying and enjoyable.
-              </p>
-              <span>Thomas S. </span>
-              <p>Businees Owner</p>
-            </div>
-            <div class="person">
-              <img src="/images/image-jennie.jpg" alt="Jennie" />
-              <p>
-                Incredible end result! Our sales increased over 400% when we
-                worked with Sunnyside. Highly recommended!
-              </p>
-              <span>Jennie F. </span>
-              <p>Businees Owner</p>
-            </div>
+          <div class="person">
+            <img src="/images/image-jennie.jpg" alt="Jennie" />
+            <p>
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <span>Jennie F. </span>
+            <p>Businees Owner</p>
           </div>
         </div>
-
-        <div class="gallery">
-          <div class="gallery-image">
-            <img
-              src="/images/desktop/image-gallery-milkbottles.jpg"
-              alt="milbottle"
-            />
-          </div>
-          <div class="gallery-image">
-            <img src="/images/desktop/image-gallery-orange.jpg" alt="orange" />
-          </div>
-          <div class="gallery-image">
-            <img src="/images/desktop/image-gallery-cone.jpg" alt="" />
-          </div>
-          <div class="gallery-image">
-            <img src="/images/desktop/image-gallery-sugarcubes.jpg" alt="" />
-          </div>
+      </div>
+      <!-- Gallery image  -->
+      <div class="gallery">
+        <div class="gallery-image">
+          <img
+            src="/images/desktop/image-gallery-milkbottles.jpg"
+            alt="milkbottle"
+          />
         </div>
+        <div class="gallery-image">
+          <img src="/images/desktop/image-gallery-orange.jpg" alt="orange" />
+        </div>
+        <div class="gallery-image">
+          <img src="/images/desktop/image-gallery-cone.jpg" alt="cone" />
+        </div>
+        <div class="gallery-image">
+          <img
+            src="/images/desktop/image-gallery-sugarcubes.jpg"
+            alt="sugercubes"
+          />
+        </div>
+      </div>
+    </main>
 
-        <footer>
-          <div class="footer-container">
-            <div class="footer-logo">
-              <!-- <img src="/images/logo.svg" alt="logo" /> -->
-              <h2>sunnyside</h2>
-            </div>
-            <div class="footer-about">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Projects</a></li>
-            </div>
-            <div class="footer-social">
-              <li>
-                <img src="/images/icon-facebook.svg" alt="facebookicon" />
-              </li>
-              <li>
-                <img src="/images/icon-instagram.svg" alt="instagramicon" />
-              </li>
-              <li><img src="/images/icon-twitter.svg" alt="twittericon" /></li>
-              <li>
-                <img src="/images/icon-pinterest.svg" alt="pinteresticon" />
-              </li>
-            </div>
-          </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>sunnyside</h2>
+        </div>
+        <div class="footer-about">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+        </div>
+        <div class="footer-social">
+          <li>
+            <img src="/images/icon-facebook.svg" alt="facebookicon" />
+          </li>
+          <li>
+            <img src="/images/icon-instagram.svg" alt="instagramicon" />
+          </li>
+          <li>
+            <img src="/images/icon-twitter.svg" alt="twittericon" />
+          </li>
+          <li>
+            <img src="/images/icon-pinterest.svg" alt="pinteresticon" />
+          </li>
+        </div>
+      </div>
 
-          <!-- Credit html -->
-          <section id="copy-right">
-            <div class="copy-right-sec">
-              <i class="fa-solid fa-copyright"></i> Powerd By Vintage & Co. |
-              Design By <a href="@_umarfarooque">hello_u</a>
-            </div>
-          </section>
-        </footer>
-      </main>
-    </div>
+      <!-- Credit html -->
+      <section id="copy-right">
+        <div class="copy-right-sec">
+          <i class="fa-solid fa-copyright"></i> Powerd By Vintage & Co. | Design
+          By <a href="@_umarfarooque">hello_u</a>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
