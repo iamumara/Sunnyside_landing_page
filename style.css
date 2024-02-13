@@ -20,7 +20,7 @@ a {
 
 /* Header  */
 header {
-  background-color: #3DBEFF;
+  background-color: #3dbeff;
 }
 
 .container {
@@ -69,9 +69,9 @@ button:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #464646; 
+  background-color: #464646;
 }
- 
+
 .heading {
   height: 500px;
   color: white;
@@ -104,7 +104,7 @@ button:hover {
 
 .card img {
   width: 100%;
-  height:  auto;
+  height: auto;
   background-size: cover;
 }
 
@@ -127,7 +127,7 @@ button:hover {
 }
 
 .text-card span {
-  font-size: .8vw;
+  font-size: 0.8vw;
   margin-top: 30px;
   text-decoration: underline;
   text-decoration-thickness: 0.3rem;
@@ -272,4 +272,120 @@ footer {
   padding-left: 4px;
   font-family: "Work Sans", sans-serif;
   text-decoration: none;
+}
+
+/* hamburger */
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+/* Media Query */
+@media only screen and (max-width: 650px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .nav-item a {
+    color: #686464eb;
+    font-size: 18px;
+  }
+  .nav-item a:hover {
+    color: #000000;
+    transition: all 1s;
+  }
+
+  button {
+    background-color: yellow;
+    padding: 15px 25px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .background {
+    background-image: url(/images/mobile/image-header.jpg);
+  }
+
+  .card {
+    width: 100%;
+  }
+  .text-card {
+    min-height: 400px;
+  }
+
+  .text-card p {
+    font-size: 18px;
+  }
+  .text-card span {
+    font-size: 18px;
+  }
+
+  .testimonials {
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .person {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+
+  .person p {
+    font-size: 18px;
+  }
+
+  .gallery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-image {
+    width: 50%;
+  }
+  
 }
